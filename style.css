@@ -1,0 +1,425 @@
+﻿body {
+    font-family: "quicksand", sans-serif;
+    font-size: 0.9em;
+    margin: 0;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+/* Début Header */
+
+header {
+    display: flex;
+    width: 100%;
+    order: 1;
+}
+
+
+/* Partie Photo */
+
+.contour_photo {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    background-color: #87CEEB;
+}
+
+.photo {
+    max-width: 200px;
+    max-height: 200px;
+    margin: 40px;
+    border: solid 4px #74b1ca;
+    border-radius: 50%;
+}
+
+
+/*Partie Nom */
+
+.nom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+}
+
+.prenom {
+    color: #87CEEB;
+}
+
+
+/* Titres */
+
+h1 {
+    Font-size: 2.5em;
+    margin-bottom: 10px;
+    margin-left: 60px;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.25em;
+}
+
+#souligne {
+    margin-left: 60px;
+    border-bottom: solid 2px #87CEEB;
+}
+
+
+/* Fin Header */
+
+
+/* Aside */
+
+.aside_main {
+    display: flex;
+    flex-direction: row;
+    order: 2;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    order: 2;
+    background-color: #87CEEB;
+    width: 30%;
+    min-width: 270px;
+}
+
+aside p {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+aside h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #74b1ca;
+    color: #87CEEB;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#logos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+#logos i {
+    font-size: xx-large;
+    border: 1px black solid;
+    border-radius: 100%;
+    color: black;
+}
+
+i[class*="motorcycle"],
+i[class*="music"],
+i[class*="globe"] {
+    padding: 7px 7px 7px 7px;
+}
+
+.about {
+    text-align: justify;
+}
+
+
+/* Fin Aside */
+
+
+/* Main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    order: 3;
+    width: 70%;
+}
+
+.ligne {
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 60px;
+    margin-right: 40px;
+    border-bottom: 2px solid #87CEEB;
+}
+
+i[class*="pencil"],
+i[class*="briefcase"],
+i[class*="graduation"] {
+    font-size: 1.8em;
+    padding-right: 20px;
+    color: #87CEEB;
+}
+
+i[class*="dot"],
+i[class*="circle"] {
+    color: #87CEEB;
+    font-size: 0.7em;
+    display: flex;
+    padding-right: 5px;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    padding-inline-start: 60px;
+}
+
+li {
+    display: flex;
+    width: 95%;
+}
+
+.dot {
+    display: flex;
+    padding-top: 18px;
+}
+
+.date {
+    width: 40%;
+    margin-right: 20px;
+}
+
+.ecole1,
+.ecole2,
+.job {
+    width: 100%;
+}
+
+.p1 {
+    font-weight: bolder;
+}
+
+
+/* Fin Main */
+
+
+/* Recommandations */
+
+.noms {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-inline-start: 60px;
+}
+
+.rec1,
+.rec2 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+
+/******* MEDIA QUERIES small screen *******/
+
+@media screen and (max-width: 768px) {
+    body {
+        max-width: 768px;
+        font-size: 0.8em;
+        margin: 0px;
+    }
+    .aside_main {
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        width: auto;
+        border: none;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        order: 1;
+    }
+    .contour_photo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: #87CEEB;
+    }
+    h1 {
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+    }
+    header h2 {
+        font-size: 1.5em;
+        display: flex;
+        justify-content: center;
+    }
+    .ligne {
+        justify-content: center;
+    }
+    .nom {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        background-color: white;
+        margin-top: 10px;
+    }
+    .prenom {
+        color: #87CEEB;
+        margin-right: 10px;
+    }
+    aside {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        order: 3
+    }
+    main {
+        width: auto;
+        order: 2
+    }
+    .formation,
+    .experience,
+    .recommandations {
+        width: auto;
+        margin: 10px;
+        padding: 10px;
+        box-shadow: 0px 0px 8px #90A4AE;
+        border-radius: 5px;
+    }
+    ul {
+        padding-left: 10px;
+    }
+    .ecole1,
+    .ecole2,
+    .job1,
+    .job2,
+    .job3 {
+        margin-right: 30px;
+        margin-bottom: 20px;
+    }
+    .about {
+        margin-bottom: 20px
+    }
+    .noms {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+
+/****** MEDIA QUERY tablet size ******/
+
+@media screen and (min-width: 768px) and (max-width:1025px) {
+    body {
+        max-width: 1025px;
+        font-size: 0.9em;
+        margin: 0px;
+    }
+    .container {
+        width: auto;
+        border: none;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .aside_main {
+        display: flex;
+        flex-direction: column;
+    }
+    #logos {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        order: 1
+    }
+    .contour_photo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: #87CEEB;
+    }
+    h1 {
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+    }
+    header h2 {
+        font-size: 1.5em;
+        display: flex;
+        justify-content: center;
+    }
+    .nom {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        background-color: white;
+        margin-top: 10px;
+    }
+    .prenom {
+        color: #87CEEB;
+        margin-right: 10px;
+    }
+    aside {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        order: 3
+    }
+    .about {
+        margin-bottom: 20px
+    }
+    main {
+        width: auto;
+        margin-top: 0%;
+        margin-left: 1px;
+        order: 2;
+    }
+    .formation,
+    .experience,
+    .recommandations {
+        width: auto;
+        margin: 10px;
+        padding: 10px;
+        box-shadow: 0px 0px 8px #90A4AE;
+        border-radius: 5px;
+    }
+    ul {
+        padding-left: 10px;
+    }
+    .ecole1,
+    .ecole2,
+    .job1,
+    .job2,
+    .job3 {
+        margin-right: 30px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+    .about {
+        margin-bottom: 20px
+    }
+    .noms {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
