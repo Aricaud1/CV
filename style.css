@@ -1,15 +1,7 @@
 ﻿body {
     font-family: "quicksand", sans-serif;
-    font-size: 0.9em;
+    font-size: 1.3em;
     margin: 0;
-    width: 100%;
-}
-
-.container {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    flex-direction: column;
     width: 100%;
 }
 
@@ -67,6 +59,10 @@ h2 {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 1.25em;
+}
+
+header h2 {
+    font-size: 1.4em;
 }
 
 #souligne {
@@ -168,7 +164,7 @@ i[class*="graduation"] {
 i[class*="dot"],
 i[class*="circle"] {
     color: #87CEEB;
-    font-size: 0.7em;
+    font-size: 1em;
     display: flex;
     padding-right: 5px;
 }
@@ -176,17 +172,17 @@ i[class*="circle"] {
 ul {
     display: block;
     list-style-type: disc;
-    padding-inline-start: 60px;
+    padding-left: 60px;
 }
 
 li {
     display: flex;
-    width: 95%;
+    width: 100%;
 }
 
 .dot {
     display: flex;
-    padding-top: 18px;
+    margin-top: 21px;
 }
 
 .date {
@@ -214,7 +210,7 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    padding-inline-start: 60px;
+    padding-left: 60px;
 }
 
 .rec1,
@@ -223,52 +219,50 @@ li {
     justify-content: flex-start;
     flex-direction: column;
     width: 50%;
-    margin-bottom: 20px;
 }
 
 
 /******* MEDIA QUERIES small screen *******/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     body {
         max-width: 768px;
-        font-size: 0.8em;
         margin: 0px;
+        font-size: 1em;
     }
     .aside_main {
-        display: flex;
         flex-direction: column;
     }
-    .container {
-        width: auto;
-        border: none;
-    }
     header {
-        display: flex;
         flex-direction: column;
         order: 1;
     }
     .contour_photo {
-        display: flex;
-        justify-content: center;
         width: 100%;
-        background-color: #87CEEB;
     }
     h1 {
-        font-size: 2em;
         display: flex;
+        font-size: 2em;
         justify-content: center;
+        margin: 0;
     }
     header h2 {
-        font-size: 1.5em;
         display: flex;
+        font-size: 1.1em;
         justify-content: center;
+        margin: 0;
+    }
+    h2 {
+        font-size: 1em;
+    }
+    #souligne {
+        margin: 0;
     }
     .ligne {
         justify-content: center;
+        margin: 0px;
     }
     .nom {
-        display: flex;
         justify-content: center;
         width: auto;
         background-color: white;
@@ -299,75 +293,70 @@ li {
         border-radius: 5px;
     }
     ul {
-        padding-left: 10px;
-    }
-    .ecole1,
-    .ecole2,
-    .job1,
-    .job2,
-    .job3 {
-        margin-right: 30px;
-        margin-bottom: 20px;
-    }
-    .about {
-        margin-bottom: 20px
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
     }
     .noms {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        padding-left: 10px;
     }
 }
 
 
 /****** MEDIA QUERY tablet size ******/
 
-@media screen and (min-width: 768px) and (max-width:1025px) {
+@media screen and (min-width: 768px) and (max-width:1023px) {
     body {
-        max-width: 1025px;
-        font-size: 0.9em;
+        max-width: 1023px;
+        font-size: 1em;
         margin: 0px;
     }
     .container {
         width: auto;
         border: none;
-        display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
         flex-direction: column;
     }
     .aside_main {
-        display: flex;
         flex-direction: column;
     }
     #logos {
-        display: flex;
         align-items: center;
         margin-bottom: 25px;
     }
     header {
-        display: flex;
         flex-direction: column;
         order: 1
     }
     .contour_photo {
-        display: flex;
         justify-content: center;
         width: 100%;
         background-color: #87CEEB;
     }
     h1 {
-        font-size: 2em;
         display: flex;
+        font-size: 2em;
         justify-content: center;
+        margin-left: 0px;
     }
     header h2 {
-        font-size: 1.5em;
         display: flex;
+        font-size: 1.5em;
         justify-content: center;
+        margin: 0;
+    }
+    .ligne {
+        justify-content: center;
+        margin: 0px;
+    }
+    #souligne {
+        margin: 0;
     }
     .nom {
-        display: flex;
         justify-content: center;
         width: auto;
         background-color: white;
@@ -380,7 +369,6 @@ li {
     aside {
         width: auto;
         height: auto;
-        display: flex;
         flex-direction: column;
         order: 3
     }
@@ -418,8 +406,8 @@ li {
         margin-bottom: 20px
     }
     .noms {
-        display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        padding-left: 10px;
     }
 }
