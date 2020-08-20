@@ -227,6 +227,7 @@ li {
 @media screen and (max-width: 767px) {
     body {
         max-width: 768px;
+        min-width: 320px;
         margin: 0px;
         font-size: 1em;
     }
