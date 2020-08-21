@@ -265,13 +265,10 @@ li {
         margin: 0px;
     }
     .nom {
-        justify-content: center;
         width: auto;
-        background-color: white;
         margin-top: 10px;
     }
     .prenom {
-        color: #87CEEB;
         margin-right: 10px;
     }
     aside {
@@ -335,9 +332,7 @@ li {
         order: 1
     }
     .contour_photo {
-        justify-content: center;
         width: 100%;
-        background-color: #87CEEB;
     }
     h1 {
         display: flex;
@@ -359,9 +354,7 @@ li {
         margin: 0;
     }
     .nom {
-        justify-content: center;
         width: auto;
-        background-color: white;
         margin-top: 10px;
     }
     .prenom {
