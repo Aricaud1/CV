@@ -100,7 +100,7 @@ aside p {
 aside h2 {
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #74b1ca;
+    background-color: #262525;
     color: #87CEEB;
     text-align: center;
     margin-bottom: 40px;
@@ -194,6 +194,7 @@ li {
 .ecole2,
 .job {
     width: 100%;
+    margin-right: 20px;
 }
 
 .p1 {
@@ -396,9 +397,7 @@ li {
     }
     .ecole1,
     .ecole2,
-    .job1,
-    .job2,
-    .job3 {
+    .jobs {
         margin-right: 30px;
         margin-bottom: 20px;
         margin-left: 10px;
@@ -410,5 +409,23 @@ li {
         flex-direction: row;
         justify-content: space-evenly;
         padding-left: 10px;
+    }
+}
+
+@media screen and (min-width: 1700px) and (max-width:2560px) {
+    body {
+        max-width: 2560px;
+        min-width: 1700px;
+        font-size: 1.5em;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    header h2 {
+        font-size: 2em;
+        margin-bottom: 100px;
+    }
+    h2 {
+        font-size: 1.5em;
     }
 }
